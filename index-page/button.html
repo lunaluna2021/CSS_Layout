@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <link href="./../css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Button專區</h1>
+    <div class="btn-area">
+        <a href="#/" class="buttonGS">材質 :buttonGS.svg</a>
+    </div>
+    <div class="btn-area">
+        <a href="#/" class="buttonG">材質 :buttonG.svg</a>
+    </div>
+    <div class="btn-area">
+        <a href="#/" class="buttonYS">材質 :buttonYS.svg</a>
+    </div>
+    <div class="btn-area">
+        <a href="#/" class="buttonY">材質 :buttonY.svg</a>
+    </div>
+    <div class="btn-area">
+        <a href="#/" class="buttonYL">材質 :buttonYL.svg</a>
+    </div>
+    <div class="btn-area">
+        <a href="#/" class="buttonfavorite" id="btnLiked">
+            <img src="../img/Button/Buttonfavorite.png" alt="" id="imgLiked">
+        </a>
+    </div>
+    <div class="btn-area">
+        <a href="#/" class="buttoncart" id="btncart"></a>
+    </div>
+    <div class="btn-area">
+        <a href="#/" class="buttonLesson"></a>
+    </div>
+
+    <div class="btn-area">
+        <a href="#/" class="buttonR">buttonR</a>
+    </div>
+    <div class="btn-area">
+        <a href="#/" class="buttonS">buttonS</a>
+    </div>
+    <div class="btn-area">
+        <a href="#/" class="buttonP">buttonP</a>
+    </div>
+
+
+    <script>
+        let liked = false;
+        btnLiked.onclick = function () {
+            if (liked === false) {
+                imgLiked.setAttribute('src', "../img/Button/ButtonfavoriteHover.png")
+                liked = true;
+            } else {
+                imgLiked.setAttribute('src', "../img/Button/Buttonfavorite.png")
+                liked = false;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link href="../css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/a-index.css">
+    <link rel="stylesheet" href="../css/windmill.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="row p-0 m-0">
+            <a class="nav-link d-flex  position-absolute justify-content-evenly" aria-current="page"
+                href="#">
+                <img src="../img/Icons/小農遊LOGO.png" class="nav-mb-logoimg" width="97.5px" alt="">
+            </a>
+        </div>
+        <div class="row">
+            <div class="d-flex  position-absolute justify-content-end mt-4 p-0 nav-title-button">
+                <a href="#" class="me-3">
+                    <div class="button-cart container">
+                        <img src="../img/Icons/icon-cart1.svg" alt="" width="20px" class="icons justify-content-center align-content-center mt-2
+                        "></img>
+                        <span class="icons-index">1</span>
+                    </div>
+                </a>
+                <div class="">
+                    <a href="#" class="position-relative" id="toggleMember"> <!--a不要全包起來，會只點到最外層，點不到li裡的a-->
+                        <div class="button-member d-flex">
+                            <img src="../img/Icons/IconClass.png" width="30px" alt="" class="">
+                        </div>
+                    </a>
+                    <ul class="d-flex memeber-status flex-column flex-md-row justify-content-evenly ps-sm-2 ps-md-0"
+                        id="memberList">
+                        <a href="#" class="">
+                            <li class="col-4 mt-sm-0 mt-md-2 icon-member">
+                            </li>
+                        </a>
+                        <a href="#" class="">
+                            <li class="col-4 mt-sm-0 mt-md-2  icon-heart">
+                            </li>
+                        </a>
+                        <a href="#" class="">
+                            <li class="col-4 mt-sm-0 mt-md-2 icon-logout">
+                            </li>
+                        </a>
+                    </ul>
+                    <div class="memeber-active-bg"></div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-md d-flex">
+            <div class="hamburger-buttom-mb">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav navbar-hamburger me-auto mb-2 mb-md-0 mt-md-5 m-md-auto position-absolute d-flex justify-content-center">
+                        <li class="nav-item menu_li  mx-md-1 
+                    ">
+                            <a class="nav-link" href="#">
+                                <div class="menu_icon has_hidden_icon">
+                                    <img src="../img/Icons/IconNews.png" alt="">
+                                </div>
+                                <span class="font-B">關於我們
+                                    <svg width="70" height="3" viewBox="0 0 70 3" fill="none" class=""
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M69.1026 2.5H65.5128C65.0103 2.5 64.6154 2.06 64.6154 1.5C64.6154 0.94 65.0103 0.5 65.5128 0.5H69.1026C69.6051 0.5 70 0.94 70 1.5C70 2.06 69.6051 2.5 69.1026 2.5ZM58.3333 2.5H54.7436C54.241 2.5 53.8462 2.06 53.8462 1.5C53.8462 0.94 54.241 0.5 54.7436 0.5H58.3333C58.8359 0.5 59.2308 0.94 59.2308 1.5C59.2308 2.06 58.8359 2.5 58.3333 2.5ZM47.5641 2.5H43.9744C43.4718 2.5 43.0769 2.06 43.0769 1.5C43.0769 0.94 43.4718 0.5 43.9744 0.5H47.5641C48.0667 0.5 48.4615 0.94 48.4615 1.5C48.4615 2.06 48.0667 2.5 47.5641 2.5ZM36.7949 2.5H33.2051C32.7026 2.5 32.3077 2.06 32.3077 1.5C32.3077 0.94 32.7026 0.5 33.2051 0.5H36.7949C37.2974 0.5 37.6923 0.94 37.6923 1.5C37.6923 2.06 37.2974 2.5 36.7949 2.5ZM26.0256 2.5H22.4359C21.9333 2.5 21.5385 2.06 21.5385 1.5C21.5385 0.94 21.9333 0.5 22.4359 0.5H26.0256C26.5282 0.5 26.9231 0.94 26.9231 1.5C26.9231 2.06 26.5282 2.5 26.0256 2.5ZM15.2564 2.5H11.6667C11.1641 2.5 10.7692 2.06 10.7692 1.5C10.7692 0.94 11.1641 0.5 11.6667 0.5H15.2564C15.759 0.5 16.1538 0.94 16.1538 1.5C16.1538 2.06 15.759 2.5 15.2564 2.5ZM4.48718 2.5H0.897436C0.394872 2.5 0 2.06 0 1.5C0 0.94 0.394872 0.5 0.897436 0.5H4.48718C4.98974 0.5 5.38462 0.94 5.38462 1.5C5.38462 2.06 4.98974 2.5 4.48718 2.5Z"
+                                            fill="#37797C" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item menu_li mx-md-1 ">
+
+                            <a class="nav-link" href="#">
+                                <div class="menu_icon has_hidden_icon">
+                                    <img src="../img/Icons/IconMember.png" alt="">
+                                </div><span class="font-B">小農心得
+                                    <svg width=" 70" height="3" viewBox="0 0 70 3" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M69.1026 2.5H65.5128C65.0103 2.5 64.6154 2.06 64.6154 1.5C64.6154 0.94 65.0103 0.5 65.5128 0.5H69.1026C69.6051 0.5 70 0.94 70 1.5C70 2.06 69.6051 2.5 69.1026 2.5ZM58.3333 2.5H54.7436C54.241 2.5 53.8462 2.06 53.8462 1.5C53.8462 0.94 54.241 0.5 54.7436 0.5H58.3333C58.8359 0.5 59.2308 0.94 59.2308 1.5C59.2308 2.06 58.8359 2.5 58.3333 2.5ZM47.5641 2.5H43.9744C43.4718 2.5 43.0769 2.06 43.0769 1.5C43.0769 0.94 43.4718 0.5 43.9744 0.5H47.5641C48.0667 0.5 48.4615 0.94 48.4615 1.5C48.4615 2.06 48.0667 2.5 47.5641 2.5ZM36.7949 2.5H33.2051C32.7026 2.5 32.3077 2.06 32.3077 1.5C32.3077 0.94 32.7026 0.5 33.2051 0.5H36.7949C37.2974 0.5 37.6923 0.94 37.6923 1.5C37.6923 2.06 37.2974 2.5 36.7949 2.5ZM26.0256 2.5H22.4359C21.9333 2.5 21.5385 2.06 21.5385 1.5C21.5385 0.94 21.9333 0.5 22.4359 0.5H26.0256C26.5282 0.5 26.9231 0.94 26.9231 1.5C26.9231 2.06 26.5282 2.5 26.0256 2.5ZM15.2564 2.5H11.6667C11.1641 2.5 10.7692 2.06 10.7692 1.5C10.7692 0.94 11.1641 0.5 11.6667 0.5H15.2564C15.759 0.5 16.1538 0.94 16.1538 1.5C16.1538 2.06 15.759 2.5 15.2564 2.5ZM4.48718 2.5H0.897436C0.394872 2.5 0 2.06 0 1.5C0 0.94 0.394872 0.5 0.897436 0.5H4.48718C4.98974 0.5 5.38462 0.94 5.38462 1.5C5.38462 2.06 4.98974 2.5 4.48718 2.5Z"
+                                            fill="#37797C" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item menu_li mx-md-1 navbar-logo">
+                            <a class="nav-link navbar-logo" aria-current="page" href="#">
+                                <img src="../img/Icons/小農遊LOGO.png" class="nav-logoimg" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item menu_li mx-md-1">
+                            <a class="nav-link" href="#">
+                                <div class="menu_icon has_hidden_icon">
+                                    <img src="../img/Icons/IconProduct.png" alt="">
+                                </div><span class="font-B">小農商城
+                                    <svg width="70" height="3" viewBox="0 0 70 3" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M69.1026 2.5H65.5128C65.0103 2.5 64.6154 2.06 64.6154 1.5C64.6154 0.94 65.0103 0.5 65.5128 0.5H69.1026C69.6051 0.5 70 0.94 70 1.5C70 2.06 69.6051 2.5 69.1026 2.5ZM58.3333 2.5H54.7436C54.241 2.5 53.8462 2.06 53.8462 1.5C53.8462 0.94 54.241 0.5 54.7436 0.5H58.3333C58.8359 0.5 59.2308 0.94 59.2308 1.5C59.2308 2.06 58.8359 2.5 58.3333 2.5ZM47.5641 2.5H43.9744C43.4718 2.5 43.0769 2.06 43.0769 1.5C43.0769 0.94 43.4718 0.5 43.9744 0.5H47.5641C48.0667 0.5 48.4615 0.94 48.4615 1.5C48.4615 2.06 48.0667 2.5 47.5641 2.5ZM36.7949 2.5H33.2051C32.7026 2.5 32.3077 2.06 32.3077 1.5C32.3077 0.94 32.7026 0.5 33.2051 0.5H36.7949C37.2974 0.5 37.6923 0.94 37.6923 1.5C37.6923 2.06 37.2974 2.5 36.7949 2.5ZM26.0256 2.5H22.4359C21.9333 2.5 21.5385 2.06 21.5385 1.5C21.5385 0.94 21.9333 0.5 22.4359 0.5H26.0256C26.5282 0.5 26.9231 0.94 26.9231 1.5C26.9231 2.06 26.5282 2.5 26.0256 2.5ZM15.2564 2.5H11.6667C11.1641 2.5 10.7692 2.06 10.7692 1.5C10.7692 0.94 11.1641 0.5 11.6667 0.5H15.2564C15.759 0.5 16.1538 0.94 16.1538 1.5C16.1538 2.06 15.759 2.5 15.2564 2.5ZM4.48718 2.5H0.897436C0.394872 2.5 0 2.06 0 1.5C0 0.94 0.394872 0.5 0.897436 0.5H4.48718C4.98974 0.5 5.38462 0.94 5.38462 1.5C5.38462 2.06 4.98974 2.5 4.48718 2.5Z"
+                                            fill="#37797C" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item menu_li mx-md-1">
+                            <a class="nav-link" href="#">
+                                <div class="menu_icon has_hidden_icon">
+                                    <img src="../img/Icons/IconClass.png" alt="">
+                                </div><span class="font-B">課程資訊
+
+                                    <br>
+                                    <svg width="70" height="3" viewBox="0 0 70 3" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M69.1026 2.5H65.5128C65.0103 2.5 64.6154 2.06 64.6154 1.5C64.6154 0.94 65.0103 0.5 65.5128 0.5H69.1026C69.6051 0.5 70 0.94 70 1.5C70 2.06 69.6051 2.5 69.1026 2.5ZM58.3333 2.5H54.7436C54.241 2.5 53.8462 2.06 53.8462 1.5C53.8462 0.94 54.241 0.5 54.7436 0.5H58.3333C58.8359 0.5 59.2308 0.94 59.2308 1.5C59.2308 2.06 58.8359 2.5 58.3333 2.5ZM47.5641 2.5H43.9744C43.4718 2.5 43.0769 2.06 43.0769 1.5C43.0769 0.94 43.4718 0.5 43.9744 0.5H47.5641C48.0667 0.5 48.4615 0.94 48.4615 1.5C48.4615 2.06 48.0667 2.5 47.5641 2.5ZM36.7949 2.5H33.2051C32.7026 2.5 32.3077 2.06 32.3077 1.5C32.3077 0.94 32.7026 0.5 33.2051 0.5H36.7949C37.2974 0.5 37.6923 0.94 37.6923 1.5C37.6923 2.06 37.2974 2.5 36.7949 2.5ZM26.0256 2.5H22.4359C21.9333 2.5 21.5385 2.06 21.5385 1.5C21.5385 0.94 21.9333 0.5 22.4359 0.5H26.0256C26.5282 0.5 26.9231 0.94 26.9231 1.5C26.9231 2.06 26.5282 2.5 26.0256 2.5ZM15.2564 2.5H11.6667C11.1641 2.5 10.7692 2.06 10.7692 1.5C10.7692 0.94 11.1641 0.5 11.6667 0.5H15.2564C15.759 0.5 16.1538 0.94 16.1538 1.5C16.1538 2.06 15.759 2.5 15.2564 2.5ZM4.48718 2.5H0.897436C0.394872 2.5 0 2.06 0 1.5C0 0.94 0.394872 0.5 0.897436 0.5H4.48718C4.98974 0.5 5.38462 0.94 5.38462 1.5C5.38462 2.06 4.98974 2.5 4.48718 2.5Z"
+                                            fill="#37797C" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+        <section id="a-mainslide">
+                <div class="a-homeslide">
+                    <div class="a-clip-img">
+                        
+                        <figure class="a-inner a-slideshow" id="a-slideshow">
+                            <div class="a-fit a-slide">
+                                <div class="imgdiv">
+                                    <!-- <img src="../img/svg/a-index_img.jpg" alt=""> -->
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+        </section>
+          <section id="a-top_about">
+            <div class="a-slide_img01"></div>
+            <div class="a-slide_img02"></div>
+            <div class="container d-flex flex-column justify-content-center align-items-center">
+            <h2><img src="../img/svg/a-top_about_tit.png" alt="環境與人的永續共存，親子都能放心遨遊在無毒友善的大自然懷抱。" class="a-text-tit-img"></h2>
+                
+            <div class="btn-area">
+              <a href="#/" class="container buttonY font-B f-20 f-Brown sp-3 pt-md-4">關於小農遊</a>
+          </div>
+          </div>
+        </section>
+        <section id="a-lesson">
+          <h2 class="w-50 m-auto">
+          <div class="d-flex justify-content-center m-auto align-items-center">
+            <img src="../img/svg/titlefarm.png" alt="" class="a-titlefarm ">
+            <img src="../img/svg/fatmergofarm.svg"  alt="" class="a-fatmergofarm">
+            <img src="../img/svg/titlefarm2.png" alt="" class="a-titlefarm2">
+          </div>
+        </h2>
+          <div class="d-flex a-lesson-btn-left">
+            <div class="position-relative">
+              <div class="">
+              <img src="../img/svg/titleRice.png" width="172px" class="a-newfarmer-tit d-none d-lg-block" alt="">
+              <br>
+              <div class="position-relative">
+              <img src="../img/svg/newfarmer.png" class="a-newfarmer-tit" alt="">
+            </div>
+            </div>
+              <div class="d-flex a-lesson-btn">
+                <a href="#/" class="a-lesson-type font-B f-16 f-Gray sp-2 me-1 text-center">農耕</a>
+                <a href="#/" class="a-lesson-type-seleted font-B f-16 f-Brown sp-2 mx-1 text-center align-middle">採收</a>
+                <a href="#/" class="a-lesson-type font-B f-16 f-Gray sp-2 mx-1 text-center">手作</a>
+                <a href="#/" class="a-lesson-type font-B f-16 f-Gray sp-2 mx-1 text-center">生態</a>
+              </div>
+              <div class="">
+              <p class="font-B f-24 f-Brown sp-2 mt-4 d-none d-lg-block">課程名稱</p>
+              <p class="font-B f-20 f-Yellow sp-2 d-none d-lg-block">2023.02.04~08</p>
+              <div class="d-block d-lg-none">
+                <div class="a-slide-drag-main"></div>
+            </div>
+              <p class="font-R f-20 f-Brown sp-2 a-lesson-paragraph flex-wrap">最新消息! 態農場一年所栽種的作物約30~40 態農場一年所栽種的作物約30~40，態農場一年所栽種的作物約30~40</p>
+            <a href="#/" class="container buttonY font-B f-20 f-Brown sp-1 pt-2 text-center me-sm-0 me-lg-5 m-sm-0 mt-4 mt-lg-0">我想瞭解更多</a>
+            
+              </div>
+                <img src="../img/svg/lessonRabbit4.png" alt="" class="a-lesson-rabbit d-none d-lg-block">
+            </div>
+            <div class="d-flex a-lesson-btn-right w-100 justify-content-center">
+                <div class="a-slide-drag-main">
+                </div>
+                <div class="position-relative">
+                    <div class="a-slide-drag"></div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <section id="a-products-news-mb" class="d-block d-lg-none mt-2 mt-lg-0">
+            <div class="m-auto">
+                    <div class="a-products-img">
+                        <img src="../img/svg/a-products-title.png" alt="">
+                    </div>
+                    <div class="a-products-title font-L f-16 f-Brown sp-2">
+                        最新消息!生態農場所栽種的作物每次活動約可認識與接觸到十種以上小農作物。
+                    </div>
+                </div>
+                <div class="px-4">
+                <a class="a-products-mb my-5">
+                        <img src="../img/Button/a-products-vegetable.png" width="112px" height="127px" alt="">
+                        <img src="../img/svg/indexProduct-M-V.png" width="186px" height="91px" alt="">
+                </a>
+                <a class="a-products-mb my-5">
+                    <img src="../img/svg/indexProduct-M-F.png"width="196px" height="117px" alt="">
+                        <img src="../img/Button/a-products-fruit.png" width="112px" height="127px" alt="">
+                </a>
+                <a class="a-products-mb my-5">
+                        <img src="../img/Button/a-products-processed.png" width="112px" height="127px" alt="">
+                        <img src="../img/svg/indexProduct-M-P.png" width="202px" height="93px" alt="">
+                </a>
+            </div>
+        </section>
+        <section  class="d-sm-none d-lg-block" id="a-products-news">
+            <div class="a-products-img">
+                <div class="a-products-title">
+                    <div class="a-products-title1">
+                        <img src="../img/svg/a-products-title.png" alt="">
+                        <br>
+                        <span class="font-R f-24 f-Brown sp-2">
+                            最新消息!生態農場所栽種的作物每次活動約可認識與接觸到十種以上小農作物。
+                        </span>
+                    </div>
+                    <div class="a-products-title2">
+                        <img src="../img/svg/a-products-title-img.png" alt="">
+                        <span class="font-R f-24 f-Brown sp-2">
+                            最新消息!生態農場所栽種的作物約30~40種，每次活動約可認識與接觸到十種以上小農作物。
+                        </span>
+                    </div>
+                </div>
+                
+                    <a href="#/" class="a-products-vegetable"></a>
+                    <a href="#/" class="a-products-fruit"></a>
+                    <a href="#/" class="a-products-processed"></a>
+                    <a href="#/" class="a-products-address"></a>
+            </div>
+        </section>
+        <section id="a-address">
+            <div class="d-flex justify-content-evenly align-content-center m-auto">
+                <div class="a-address-title">
+                    <img src="../img/svg/a-address-title.png" class="a-address-title-img" alt="">
+                    <br>
+                    <p class="f-Brown f-20 font-R sp-1">313新竹縣尖石鄉嘉樂村2鄰70號</p>
+                    <p class="font-R f-20 f-Brown sp-2">
+                        生態農場所栽種的作物每次活動約可認識與接觸到十種以上小農作物。
+                    </p>
+                    <div class="btn-area">
+                        <a href="#/" class="container buttonY font-B f-24 f-Brown sp-3 pt-2 text-center m-0 d-none d-lg-flex">關於小農遊</a>
+                    </div>
+                </div>
+                <div class="">
+                    <img src="../img/svg/a-address-map.png" class="a-address-map" alt="">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-card">
+                <div class="d-flex justify-content-center">
+                    <img src="../img/Icons/小農遊LOGO.png" class="footer-logoimg " alt="">
+                </div>
+                <p class="text-center f-Brown f-16 font-R sp-1">
+                    <img src="../img/Icons/IconPhone.svg" alt="" class="me-1">
+                    0921-222-222
+                </p>
+                <p class="text-center f-Brown f-16 font-R sp-1">313新竹縣尖石鄉嘉樂村2鄰70號</p>
+                <div class="d-flex justify-content-evenly mt-4 mt-md-2">
+                    <a href="#" class="">
+                        <div class="button-footer ">
+                            <img src="../img/Icons/icon-cart1.svg" alt="" class="icons justify-content-center align-content-center footer-cart mt-2
+                            "></img>
+                        </div>
+                    </a>
+                    <a href="#" class="">
+                        <div class="button-footer">
+                            <img src="../img/Icons/Icon-ig.svg" alt="" class="justify-content-center align-content-center footer-ig mt-2
+                            "></img>
+                        </div>
+                    </a>
+                    <a href="#" class="">
+                        <div class="button-footer d-flex justify-content-center">
+                            <img src="../img/Icons/Icon-FB.svg" alt="" class="justify-content-center align-content-center footer-fb mt-2
+                            " width="23px" height="40px">
+                        </div>
+                    </a>
+    
+                </div>
+            </div>
+            <div class="footer-img d-sm-none d-md-block">
+                <img src="../img/Icons/footer 3.svg" alt="" class="float-start">
+                <img src="../img/Icons/footer2.svg" alt="" class="float-end">
+            </div>
+            <div class="wrap">
+                <div class="container">
+              <div class="windmill">
+                <span class="windmill-body"></span>
+                <span class="windmill-fans-left"></span>
+              </div>
+        </footer>
+    <script src="../JS/main.js"></script>
+</body>
+
+
+</html>

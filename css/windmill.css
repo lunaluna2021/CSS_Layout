@@ -1,0 +1,40 @@
+/* .windmill {
+  margin: 20px;
+  position: relative;
+  width: 325px;
+  height: 257px;
+}
+
+.windmill-body {
+  position: absolute;
+  width: 166px;
+  height: 123px;
+  background-image: url(../img/svg/windmill.png);
+  background-size: cover;
+  top: 55px;
+
+}
+
+.windmill-fans {
+  position: absolute;
+  width: 135px;
+  height: 123px;
+  background-image: url(../img/svg/windmillFan\ .png);
+  background-size: cover;
+  left: 15px;
+  -moz-animation: windmillloop 15s linear infinite;
+  animation: windmillloop 15s linear infinite;
+}
+
+@keyframes windmillloop {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+
+
+
+} */
