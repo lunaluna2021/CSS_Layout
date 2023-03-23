@@ -518,9 +518,7 @@
     margin-top: 10px;
     width: 330px;
     height: 445px;
-    -webkit-mask-image: url('../img/texture/a-tit-slide-mask-m.png');
-    mask-image: url('../img/texture/a-tit-slide-mask-m.png');
-    -webkit-mask-repeat: no-repeat;
+
     mask-repeat: no-repeat;
   }
 
