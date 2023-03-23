@@ -22,9 +22,6 @@
     margin-top: 50px;
     width: 1688px;
     height: 658px;
-    -webkit-mask-image: url('../img/texture/a-tit-slide-mask.svg');
-    mask-image: url('../img/texture/a-tit-slide-mask.svg');
-    -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     /* overflow: hidden; */
     position: relative;
